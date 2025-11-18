@@ -1,4 +1,4 @@
-=---
+---
 title: PicSeal Terms of Service
 ---
 
