@@ -4,119 +4,80 @@ title: PicSeal Privacy Policy
 
 # Privacy Policy
 
-**Last updated:** November 18th, 2025
+**Last updated:** November 18, 2025
 
-This Privacy Policy describes how **PicSeal** (“**we**”, “**us**”, “**our**”) collects, uses, and shares information when you use our iOS application PicSeal (the “**App**”) and our legal website at `legal.picsealapp.com` (together, the “**Service**”).
+This Privacy Policy explains how **PicSeal**, operated by **Quokka LLC**, collects, uses, and shares information when you use our iOS application PicSeal (the “**App**”) and our legal website at `legal.picsealapp.com` (together, the “**Service**”).
 
-If you do not agree with this Policy, please do not use PicSeal.
+If you do not agree with this Policy, please do not use the Service.
 
 ---
 
 ## 1. Who we are & how to contact us
 
-PicSeal is operated by **Quokka LLC**, a company organized in **Minnesota, United States of America**.
+**Quokka LLC**  
+202 N Cedar Ave Ste 1  
+Owatonna, MN 55060  
+USA  
 
-- **Email:** contact@picsealapp.com  
-- **Address:** [ADDRESS]
-
-We are the “data controller” for personal data we collect through the Service (or the equivalent under your local law).
+**Email:** contact@picsealapp.com
 
 ---
 
-## 2. What we collect
+## 2. Information we collect
 
-We only collect information we need to operate and improve PicSeal:
+We collect information needed to operate and improve PicSeal, including:
 
-1. Information you provide directly  
-2. Photos and media you submit  
-3. Usage and analytics data  
-4. Device and diagnostic data  
-5. Information from Apple and other platforms
+### 2.1 Information you provide
+- **Email address** when you sign in using Sign in with Apple  
+- **Messages and attachments** you send when you contact us for support  
 
-### 2.1 Information you provide directly
-
-- **Email address**  
-  - When you choose to **Sign in with Apple**, we receive either your real email address or an anonymized Apple relay email.  
-- **Support communications**  
-  - If you contact us, we receive whatever contact details and message content you send.
-
-We do **not** collect passwords. Authentication is handled by Apple and/or our backend provider.
+We do not collect passwords.
 
 ### 2.2 Photos and media you submit
 
-PicSeal has two main parts: **Scan** and **Enhance**. They behave differently for privacy.
+PicSeal processes photos in two ways:
 
-#### a) Scanner photos used for ML training (opt-in only)
+#### a) Scanning (photos captured using the in-app scanner)
 
-If you choose to **help improve PicSeal** in the App, we will upload photos captured with the in-app **scanner** for research and development.
+If you choose to **help improve PicSeal**, the App may upload photos captured using the in-app scanner for research and product-improvement purposes.
 
-- **What we collect**
-  - The full image captured through the PicSeal scanner.
-- **What we do not collect**
-  - Photos you only **import from your photo library** are *not* uploaded for training in the current version.
-- **Where they go**
-  - Stored temporarily in **Supabase** object storage (on infrastructure such as Amazon S3).  
-  - Then transferred to **Roboflow**, a third-party service we use for dataset management, annotation, and model training.
-- **How we use them**
-  - To train and evaluate computer-vision models that detect and crop individual photos inside a scan.  
-  - To understand what people are trying to preserve (for example, prints, albums, and keepsakes) and to design better algorithms or steps in our scanning pipeline.
+Scanner photos may:
+- Be used to train and evaluate our photo-detection and cropping models  
+- Help us understand the types of items users want to preserve and improve overall scanning accuracy  
 
-Once images are transferred to Roboflow, they are stored there as part of our training dataset and **are not linked back to individual users**.
+Photos you **import from your photo library** are **not** used for training.
 
-#### b) Photos submitted for enhancement (Replicate AI workflow)
+Scanner training is **optional** and can be turned on or off at any time.
 
-When you use **Enhance** features:
+#### b) Enhancements and effects (photos you submit for processing)
 
-- **What we collect**
-  - The photo you select for enhancement.
-- **Where they go**
-  - Uploaded to Supabase object storage.  
-  - Our backend sends a copy to **Replicate** (a third-party AI provider) to run the enhancement model.
-- **Retention**
-  - Replicate deletes prediction inputs and outputs after about **one hour** by default.  
-  - Our copy in Supabase is kept for up to **7 days** for processing, troubleshooting, and quality assurance, and then deleted.
-- **How we use them**
-  - To deliver the enhancement you requested and to debug failures.  
-  - We **do not** use enhancement photos for ML training at this time.
+When you request an enhancement, the App temporarily uploads the photo so we can generate the result and return it to you.
 
-You remain responsible for backing up your original photos elsewhere. PicSeal is not a long-term backup service.
+Enhancement photos:
+- Are used only to perform the service you request  
+- Are retained for a short period (up to **7 days**) for processing and troubleshooting  
+- Are **not** used to train our models  
 
 ### 2.3 Usage and analytics data
 
-We use privacy-friendly analytics to understand how the app is used and to improve it.
+We collect limited, privacy-focused analytics to understand usage patterns and improve the Service, such as:
+- Which features are used  
+- Whether scanning or enhancement succeeded or failed  
+- Basic device information (e.g., device model, iOS version)  
+- General location (e.g., country), if provided by the OS  
 
-Examples of data:
-
-- App opens and closes  
-- Scanner opened / closed  
-- Number of photos detected in a scan (for example, “4 photos detected”)  
-- Whether auto-crop succeeded or failed  
-- Whether enhancement started and completed successfully  
-- Whether the “Help improve PicSeal” setting is enabled  
-- Device model (e.g., iPhone 15), iOS version, app version, general region
-
-We **do not** collect screen recordings or session replays, and we do **not** send raw images, bounding boxes, or face crops to analytics.
-
-Analytics are currently powered by **PostHog**, which acts as our data processor.
+We do **not** collect:
+- Screen recordings  
+- Session replays  
+- Raw photo content through analytics  
+- Bounding boxes or face-level metadata for analytics
 
 ### 2.4 Device and diagnostic data
+We may receive anonymized crash reports and performance diagnostics to help us fix issues and improve stability.
 
-Apple and our backend may provide:
-
-- Crash reports  
-- Performance metrics  
-- Error logs (without image content)
-
-We use this solely to debug and improve stability.
-
-### 2.5 Information from Apple / app stores
-
-If you purchase a subscription or in-app purchase:
-
-- Apple processes your payment.  
-- We receive high-level information such as the product purchased and anonymized identifiers needed to manage your subscription.
-
-We do **not** receive your full credit-card number or full billing address from Apple.
+### 2.5 Information from Apple
+If you make a purchase, Apple provides us with anonymized transaction information needed to manage your subscription.  
+We do **not** receive your payment card details.
 
 ---
 
@@ -124,144 +85,125 @@ We do **not** receive your full credit-card number or full billing address from 
 
 We use your information to:
 
-1. **Provide the Service**  
-   - Run the app, process scans and enhancements, maintain your account.  
-   - Legal basis (where applicable): performance of a contract.
+### a) Provide and operate PicSeal
+- Perform scans, enhancements, and features  
+- Authenticate your account  
+- Deliver results to your device  
 
-2. **Improve PicSeal and develop new features**  
-   - Train and evaluate our scanning models using opt-in scanner photos.  
-   - Understand which types of memories users are trying to preserve and design new algorithm steps.  
-   - Legal basis: your **consent** (for training data) and our **legitimate interests** in improving the Service.
+### b) Improve PicSeal
+Scanner photos (only if you opt in) may be used to improve detection accuracy and the quality of our scanning algorithms.
 
-3. **Analytics and usage insights**  
-   - Measure feature usage, flows, and performance; prioritize product work and troubleshoot issues.  
-   - Legal basis: legitimate interests.
+### c) Develop new features
+We use anonymized usage insights and, where applicable, opt-in scanner photos to research and evaluate improvements to the App.
 
-4. **Communicate with you**  
-   - Respond to support requests and notify you about important changes.  
-   - Legal basis: performance of a contract; legitimate interests.
+### d) Communicate with you
+- Respond to support inquiries  
+- Send important updates about the Service  
 
-5. **Safety, security, and legal compliance**  
-   - Detect abuse or misuse and comply with legal obligations.  
-   - Legal basis: legal obligations; legitimate interests.
-
----
-
-## 4. When we share information
-
-We do not sell your personal information.
-
-We share information only with:
-
-### 4.1 Service providers (processors)
-
-We use trusted third parties to help us operate the Service:
-
-- **Supabase** – authentication, database, and file storage.  
-- **Roboflow** – dataset management, annotation, and ML model training for scanner images (opt-in only).  
-- **Replicate** – AI service that performs photo enhancements.  
-- **PostHog** – analytics platform for usage metrics.  
-- **Apple / App Store / TestFlight** – distribution, in-app purchases, and crash reporting.
-
-These providers act on our instructions and are bound by contracts to protect your data.
-
-### 4.2 Business transfers
-
-If PicSeal or substantially all of our assets are acquired, or we undergo a merger or reorganization, user data (including training datasets and trained models) may be transferred to the acquiring entity as part of the transaction. The new entity will continue to honor this Policy or provide you with notice of any changes.
-
-### 4.3 Legal requirements
-
-We may disclose information if we believe it is reasonably necessary to:
-
-- Comply with applicable law or legal process  
-- Protect the rights, property, or safety of our users, the public, or ourselves  
+### e) Safety & compliance
+- Detect prohibited content or misuse  
+- Comply with legal obligations  
 - Enforce our Terms of Service  
 
 ---
 
-## 5. How long we keep your information
+## 4. Sharing your information
+
+We do not sell your personal information.
+
+We may share information with:
+
+### 4.1 Service providers
+Trusted providers who help us operate the Service, including:
+- Storage and hosting providers  
+- Analytics providers  
+- Machine-learning infrastructure providers  
+- Customer support and operational tools  
+
+These providers act under confidentiality obligations and process data only on our behalf.
+
+### 4.2 Business transfers
+If Quokka LLC or PicSeal is sold, merged, or reorganized, your information—including scanner training datasets and derived models—may be transferred as part of that transaction.
+
+### 4.3 Legal or safety reasons
+We may disclose information to comply with the law or protect rights, safety, and property.
+
+---
+
+## 5. Retention
 
 - **Scanner training photos (opt-in)**  
-  - Kept in Supabase long enough to transfer to Roboflow.  
-  - At Roboflow, used in our training datasets for as long as needed to develop and operate our models.  
-  - Once included in a dataset or trained model, these images are **not individually removable**, because they are no longer linked to specific users.
+  - Retained only as long as needed for training and evaluation.  
+  - Once incorporated into training datasets or models, they cannot be individually removed because they are no longer linked to specific users.
 
 - **Enhancement photos**  
-  - Replicate: deleted after ~1 hour (per their defaults).  
-  - Supabase: retained for up to **7 days** for processing and debugging, then deleted.
+  - Retained for up to **7 days** for processing and troubleshooting, then deleted.
 
-- **Account and contact info**  
-  - Kept while your account is active or as needed to provide the Service and for a reasonable period afterward for record-keeping and legal obligations.
+- **Account & communications**  
+  - Retained while your account is active or as required for legitimate business or legal reasons.
 
-- **Analytics data**  
-  - Retained in aggregated or pseudonymous form for as long as useful for understanding usage and improving the app.
-
-We may keep some information longer if required by law.
+- **Analytics**  
+  - May be retained in aggregated or de-identified form.
 
 ---
 
-## 6. Your choices and rights
+## 6. Your choices
 
-### 6.1 Training data consent & opt-out
+### 6.1 Scanner training (opt-in)
+You can enable or disable scanner training any time in Settings.
 
-- Participation in scanner training is **optional**.  
-- You can toggle this setting in the App under **Settings → Help Improve PicSeal** (name may vary).  
-  - When turned **off**, we stop uploading new scanner images for training.  
-  - Turning it off does **not** remove images already integrated into training datasets or trained models, because we cannot reliably link those images back to your account.
+Turning it off stops new uploads but does not remove photos already incorporated into training datasets or models.
 
 ### 6.2 Access, correction, deletion
+Depending on your region, you may request:
+- Access to personal information  
+- Correction of inaccurate information  
+- Deletion of certain information  
 
-Depending on your location, you may have legal rights to:
+We may be unable to delete:
+- Photos already incorporated into de-identified training datasets  
+- Machine-learning models derived from training data  
+- Information we are legally required to retain  
 
-- Request access to personal information we hold about you  
-- Request correction of inaccurate information  
-- Request deletion of certain information  
-
-You can contact us at **contact@picsealapp.com** to make these requests. We may need to verify your identity.
-
-We will honor valid requests where required by law, subject to limitations—for example, we generally cannot delete:
-
-- Information we are legally required to keep  
-- Information already aggregated or anonymized  
-- Scanner images already integrated into training datasets or models
+To make a request, contact us at: **contact@picsealapp.com**
 
 ---
 
-## 7. International data transfers
-
-Our service providers may process your information in countries other than where you live. Where required, we apply appropriate safeguards (such as standard contractual clauses) to protect your data.
+## 7. International transfers
+Your information may be processed in countries other than where you live.  
+We use appropriate safeguards where required.
 
 ---
 
 ## 8. Children’s privacy
 
-PicSeal is **not directed to children under 18**, and we do not knowingly allow children to create accounts.
-
-However, the photos you scan may depict children (e.g., family photos). By using the Service, you confirm that you are an adult and have the right to scan and upload those photos.
-
-If you believe a child has provided us with personal information directly, please contact us and we will take appropriate steps.
+PicSeal is **not directed to individuals under 18**.  
+Photos you scan may depict minors; by using PicSeal, you represent that you have the right to scan them.
 
 ---
 
 ## 9. Security
-
-We use reasonable technical and organizational measures to protect your information, including encryption in transit, restricted access to production systems, and the use of reputable infrastructure providers.
-
-No system can be 100% secure; we cannot guarantee absolute security.
+We use reasonable technical and administrative safeguards to protect your information.  
+No method of data transmission or storage is completely secure.
 
 ---
 
 ## 10. Changes to this Policy
 
-We may update this Policy from time to time. We will update the “Last updated” date above and, where appropriate, notify you in-app or by other means.
-
-Your continued use of PicSeal after changes become effective means you accept the updated Policy.
+We may update this Policy occasionally.  
+We will update the “Last updated” date and notify you where appropriate.
 
 ---
 
 ## 11. Contact
 
-If you have any questions or concerns about this Policy or our data practices, please contact us:
+For questions about this Privacy Policy, email:
 
-- **Email:** contact@picsealapp.com 
-- **Address:** [ADDRESS]
+**contact@picsealapp.com**
+
+Or write to:
+
+**Quokka LLC**  
+202 N Cedar Ave Ste 1  
+Owatonna, MN 55060  
+USA
